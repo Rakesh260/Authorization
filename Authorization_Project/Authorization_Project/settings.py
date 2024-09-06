@@ -131,13 +131,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.cloudzimail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "harshavardhanp@medplusindia.com"
-EMAIL_HOST_PASSWORD = "Harshamedplus@9"
-DEFAULT_FROM_EMAIL = "harshavardhanp@medplusindia.com"
-
-PASSWORD_RESET_EMAIL_ID = "harshavardhanp@medplusindia.com"
-PASSWORD_RESET_EMAIL_ID_PASSWORD = "Harshamedplus@9"
-
+EMAIL_HOST_USER = "yourmail@gmail.com"
+EMAIL_HOST_PASSWORD = "your app password"
+DEFAULT_FROM_EMAIL = "yourmail@gmail.com"
 
 SMTP_SERVER = "smtp.cloudzimail.com"
 SMTP_PORT = 587

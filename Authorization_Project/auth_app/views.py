@@ -1,11 +1,6 @@
-from lib2to3.fixes.fix_input import context
 
-from django.contrib.messages.context_processors import messages
 from django.db.models import Q
-from django.shortcuts import render
-from django.urls import reverse
-from rest_framework.permissions import AllowAny
-from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.utils.http import urlsafe_base64_encode
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
@@ -116,6 +111,7 @@ class Register(APIView):
             return render(request, 'email_verification_sent.html')
 
     def get(self, request):
+        request.session.flush()
         return render(request, 'sign_up_page.html')
 
 
